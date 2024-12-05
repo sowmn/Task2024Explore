@@ -845,7 +845,7 @@
 
         <div>
           <!-- meeting-controls / transcription -->
-          <fieldset id="meetingControlsTranscription">
+          <fieldset id="meetingControlsRecordingsTranscriptionSummary">
             <legend>Transcription</legend>
             <div class="transcription">
               <div class="btn-group u-mb">
@@ -858,6 +858,22 @@
               </div>
               <textarea id="gc-transcription-content"
                 disabled="">Transcription Content: Webex Assistant must be enabled, check the console!</textarea>
+            </div>
+          </fieldset>
+        </div>
+        
+        <!-- Sowmya: Action items -->
+        <div>
+          <!-- meeting-controls / transcription -->
+          <fieldset id="meetingControlRecordingsSummary">
+            <legend>Recordings Summary</legend>
+            <div class="recordings summary">
+              <div class="btn-group u-mb">
+                <button id="gc-toggle-transcription" type="button"
+                  onclick="toggleTranscription()" class="btn-code" data-enabled="false">Start Transcription</button>
+              </div>
+              <textarea id="gc-transcription-content"
+                disabled="">Content of transcriptions</textarea>
             </div>
           </fieldset>
         </div>
